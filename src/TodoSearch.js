@@ -2,10 +2,10 @@ import React from "react";
 import './TodoSearch.css';
 
 
-function TodoSearch(){
+function TodoSearch( { searchValue, setSearchValue } ){
 
-    // Array to stone a variable + funcion 🤯🤯🤯
-    const [searchValue, setSearchValue] = React.useState('');
+    // Array to stone a variable + function 🤯🤯🤯
+    // const [searchValue, setSearchValue] = React.useState('');
 
     const onSearchValueChange = (event) => {
         setSearchValue(event.target.value);
